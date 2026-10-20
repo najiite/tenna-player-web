@@ -1,0 +1,63 @@
+---
+slug: faq
+title: FAQ and help
+description: Answers about Tenna IPTV Player: adding a playlist, which download to choose, the Windows and Mac security warnings, sound and subtitles, multi-view, and privacy.
+priority: 0.8
+---
+<section class="page-head">
+  <div class="container">
+    <span class="eyebrow">Help</span>
+    <h1>Questions and answers.</h1>
+    <p class="lead">Quick answers to the things people ask most. If yours is not here, tell us.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(36px,5vw,60px)">
+  <div class="container" style="max-width:52rem">
+
+    <div class="faq-group">
+      <h2>Getting started</h2>
+      <details open><summary>What is Tenna?</summary><div class="answer"><p>Tenna is a player for IPTV playlists. You give it your own Xtream Codes login or M3U link, and it shows your live TV, movies and series in one tidy app with a TV guide, multi-view and live sports scores.</p></div></details>
+      <details><summary>Does Tenna come with channels or content?</summary><div class="answer"><p>No. Tenna provides no channels, films or series, and hosts nothing. You bring a playlist from a provider you have the right to use. See the <a href="{{base}}/disclaimer/">disclaimer</a>.</p></div></details>
+      <details><summary>Is it free?</summary><div class="answer"><p>Yes. No subscription, no ads and no sign-up.</p></div></details>
+      <details><summary>How do I add my playlist?</summary><div class="answer">
+        <p>On first launch Tenna shows the add-playlist form. Choose <b>Xtream Codes</b> and enter the server address, username and password your provider gave you, or choose <b>M3U URL</b> and paste the link. Tap <b>Add playlist</b> and wait while the library loads. Later, add more under Settings, then Playlists.</p>
+        <p>If you copied your login from a message, Tenna offers to fill the form in for you.</p>
+      </div></details>
+      <details><summary>What is the difference between Xtream Codes and M3U?</summary><div class="answer"><p>Both are ways a provider can share a channel list. An Xtream Codes login (server, username, password) also gives Tenna movies, series and the TV guide. An M3U link is a plain list of live channels.</p></div></details>
+    </div>
+
+    <div class="faq-group">
+      <h2>Downloading and installing</h2>
+      <details><summary>Which Mac file should I download?</summary><div class="answer"><p>Apple menu, then About This Mac. <b>Chip: Apple M1</b> (or M2, M3, M4) means Apple Silicon: get the <code>mac-arm64</code> file. <b>Processor: Intel</b> means the <code>mac-x64</code> file. The Intel one on an Apple Silicon Mac works but is far slower.</p></div></details>
+      <details><summary>Windows says "Windows protected your PC". Is it safe?</summary><div class="answer"><p>That screen appears for any program Windows has not seen many times or that is not code-signed, and Tenna's installer is not signed yet. Choose <b>More info</b>, then <b>Run anyway</b>. You can check the installer is the real one by downloading it only from the Download page, which links to this project's GitHub releases.</p></div></details>
+      <details><summary>My Mac says the app cannot be opened or is damaged.</summary><div class="answer"><p>macOS blocks apps that are not signed with an Apple developer certificate. Move Tenna to Applications, then right-click it and choose <b>Open</b>, then <b>Open</b> again. If it still says "damaged", open Terminal and run <code>xattr -cr "/Applications/Tenna IPTV Player.app"</code>.</p></div></details>
+      <details><summary>Will there be Android and iPhone versions?</summary><div class="answer"><p>Yes, both are coming soon. The Download page will show the buttons once they are ready.</p></div></details>
+      <details><summary>Can I run it on my smart TV?</summary><div class="answer"><p>Not directly. Plug a computer running Tenna into the TV with an HDMI cable, or, once the iPhone and iPad apps are out, send the picture to a TV that supports AirPlay.</p></div></details>
+    </div>
+
+    <div class="faq-group">
+      <h2>Watching</h2>
+      <details><summary>Why does a channel keep stopping, or show "Reconnecting…"?</summary><div class="answer"><p>Tenna reconnects a stalled stream by itself: it nudges it, then restarts it, with waits between tries. If the problem is the provider's server or your connection, it will keep trying and then show an error with a <b>Retry</b> button. Try the speed test in Settings to check your connection.</p></div></details>
+      <details><summary>Multi-view cuts channels out when I add another one.</summary><div class="answer"><p>Many providers allow only one stream at a time per account, and stop a stream when a second one opens. Use the <b>cross-playlist view</b> with playlists from different accounts, or ask your provider about a plan with more connections.</p></div></details>
+      <details><summary>A film had picture but no sound.</summary><div class="answer"><p>Films with Dolby Digital or DTS sound need converting, which the desktop apps do automatically. It can take a few seconds to start. If a film still has no sound, tell us which one.</p></div></details>
+      <details><summary>How do I turn on subtitles or change the audio language?</summary><div class="answer"><p>Open the controls over a film and tap the subtitle or audio button. The tracks stored in the film are listed; choose one. A film that has no subtitle tracks will show none.</p></div></details>
+      <details><summary>What are the keyboard shortcuts?</summary><div class="answer"><p><kbd>Space</kbd> or <kbd>K</kbd> pause, <kbd>←</kbd> <kbd>→</kbd> skip, <kbd>↑</kbd> <kbd>↓</kbd> volume, <kbd>M</kbd> mute, <kbd>F</kbd> or a double-click for full screen, <kbd>PgUp</kbd> <kbd>PgDn</kbd> previous and next channel, and <kbd>Esc</kbd> to leave full screen or go back.</p></div></details>
+      <details><summary>The programme guide shows the wrong times.</summary><div class="answer"><p>Some providers' guides run early or late. Open Settings, Playlists, choose the playlist, then <b>Manage EPG</b> and shift the guide by the number of hours that makes it right.</p></div></details>
+    </div>
+
+    <div class="faq-group">
+      <h2>Privacy and legal</h2>
+      <details><summary>What data does Tenna collect?</summary><div class="answer"><p>None. There are no accounts, ads or analytics. Your logins and library stay on your device, and the app talks only to your provider, to a public sports scoreboard for scores, and to a speed-test server when you run the speed test. The full details are in the <a href="{{base}}/privacy/">privacy policy</a>.</p></div></details>
+      <details><summary>Is Tenna legal to use?</summary><div class="answer"><p>Tenna is a media player, like many others. Whether what you watch with it is legal depends on your playlist and on where you live, and that is your responsibility. See the <a href="{{base}}/disclaimer/">disclaimer</a> and the <a href="{{base}}/terms/">terms of use</a>.</p></div></details>
+      <details><summary>Is the source code available?</summary><div class="answer"><p>Yes, the code for the apps is on <a href="{{c:repos.app}}" rel="noopener">GitHub</a> and the desktop packaging is on <a href="{{c:repos.desktop}}" rel="noopener">GitHub</a> too. See the <a href="{{base}}/open-source/">open-source notices</a> for the software Tenna is built with.</p></div></details>
+    </div>
+
+    <div class="note reveal">
+      {{icon:shield}}
+      <div>
+        <p><b>Still stuck?</b> <a href="{{c:supportUrl}}" rel="noopener">Report a problem on GitHub</a> and tell us your computer (Windows or Mac, and which chip), what you were doing, and what happened. Please never share your playlist login in a public report.</p>
+      </div>
+    </div>
+  </div>
+</section>

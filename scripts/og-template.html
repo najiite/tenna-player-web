@@ -1,0 +1,33 @@
+<!doctype html><meta charset="utf-8">
+<style>
+  html,body{margin:0;width:1200px;height:630px;background:#060607;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#f4f4f6;overflow:hidden}
+  .bg{position:absolute;inset:0;background:radial-gradient(60% 80% at 20% 0%,rgba(248,222,126,.22),transparent 70%),radial-gradient(40% 60% at 95% 100%,rgba(124,92,255,.16),transparent 70%)}
+  .grid{position:absolute;inset:0;opacity:.35;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:radial-gradient(70% 70% at 30% 20%,#000,transparent 80%)}
+  .wrap{position:absolute;left:84px;top:0;bottom:0;width:640px;display:flex;flex-direction:column;justify-content:center}
+  .brand{display:flex;align-items:center;gap:18px;font-size:38px;font-weight:800;letter-spacing:-.02em;margin-bottom:34px}
+  .brand img{width:64px;height:64px}
+  h1{font-size:76px;line-height:1.02;letter-spacing:-.04em;margin:0 0 26px;font-weight:850}
+  h1 span{background:linear-gradient(180deg,#fff3bd,#f8de7e 45%,#efc33a);-webkit-background-clip:text;background-clip:text;color:transparent}
+  p{font-size:28px;color:#a3a3ad;margin:0;line-height:1.35}
+  .pills{display:flex;gap:12px;margin-top:34px}
+  .pill{font-size:21px;font-weight:700;padding:8px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.18);color:#d4d4dc}
+  .pill.gold{color:#171200;background:linear-gradient(180deg,#f8de7e,#efc33a);border-color:transparent}
+  .win{position:absolute;right:-70px;top:120px;width:520px;border-radius:22px;background:#0a0a0c;border:1px solid rgba(255,255,255,.16);box-shadow:0 60px 120px -30px #000;overflow:hidden;transform:rotate(-4deg)}
+  .win .bar{height:42px;background:#000;display:flex;align-items:center;gap:9px;padding:0 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .win .bar i{width:13px;height:13px;border-radius:50%;display:block}
+  .win .hero{margin:18px;height:190px;border-radius:16px;background:radial-gradient(90% 120% at 15% 10%,#7a5d10,transparent 60%),linear-gradient(120deg,#1d2440,#3b1d48 60%,#1a0f24);position:relative}
+  .win .hero b{position:absolute;left:20px;bottom:18px;font-size:26px}
+  .win .row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 18px 18px}
+  .win .row div{aspect-ratio:2/3;border-radius:10px}
+</style>
+<div class="bg"></div><div class="grid"></div>
+<div class="wrap">
+  <div class="brand"><img src="../public/img/tenna-mark.svg" alt="">Tenna IPTV Player</div>
+  <h1>Live TV, movies and series. <span>Beautifully played.</span></h1>
+  <p>Free for Windows and Mac. Android and iOS coming soon.</p>
+  <div class="pills"><span class="pill gold">Download</span><span class="pill">No accounts</span><span class="pill">Multi-view</span></div>
+</div>
+<div class="win"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+  <div class="hero"><b>Tonight's featured film</b></div>
+  <div class="row"><div style="background:linear-gradient(160deg,#3b82f6,#1e1b4b)"></div><div style="background:linear-gradient(160deg,#f472b6,#4c1d95)"></div><div style="background:linear-gradient(160deg,#fb923c,#7c2d12)"></div><div style="background:linear-gradient(160deg,#34d399,#064e3b)"></div></div>
+</div>

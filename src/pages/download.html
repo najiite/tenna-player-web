@@ -1,0 +1,137 @@
+---
+slug: download
+title: Download
+description: Download Tenna IPTV Player for Windows and Mac. Android and iOS are coming soon. Free, with no sign-up.
+priority: 0.9
+---
+<section class="page-head">
+  <div class="container">
+    <span class="eyebrow">Download</span>
+    <h1>Get Tenna.</h1>
+    <p class="lead">Free for Windows and Mac. The Android and iOS apps are coming soon.</p>
+    <p class="meta">Version {{c:version}} · installers are hosted on GitHub Releases</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(36px,5vw,60px)">
+  <div class="container">
+    <div class="dl-grid">
+
+      <article class="dl reveal" data-os="windows" id="windows">
+        <span class="badge badge-good tag-rec">Recommended for you</span>
+        <h3>{{icon:monitor}} Windows</h3>
+        <p class="req">Windows 10 or 11, 64-bit.</p>
+        <a class="btn btn-primary btn-lg btn-block" href="{{c:downloads.windows}}" rel="noopener">{{icon:download}} Download for Windows</a>
+        <p class="size"><span>Tenna-IPTV-Player-Setup.exe</span><span>about 130 MB</span></p>
+      </article>
+
+      <article class="dl reveal" data-os="mac" id="mac">
+        <span class="badge badge-good tag-rec">Recommended for you</span>
+        <h3>{{icon:monitor}} macOS</h3>
+        <p class="req">macOS 12 or later. Pick the file for your chip.</p>
+        <a class="btn btn-primary btn-lg btn-block" href="{{c:downloads.macArm}}" rel="noopener">{{icon:download}} Apple Silicon (M1 or later)</a>
+        <a class="btn btn-ghost btn-block" href="{{c:downloads.macIntel}}" rel="noopener">{{icon:download}} Intel Mac</a>
+        <p class="size"><span>.dmg disk image</span><span>about 145 to 155 MB</span></p>
+      </article>
+
+      <article class="dl soon reveal" id="android">
+        <h3>{{icon:phone}} Android <span class="badge badge-soon">Coming soon</span></h3>
+        <p class="req">Phones and tablets. We are finishing the Android app.</p>
+        <span class="btn btn-ghost btn-lg btn-block" aria-disabled="true" role="button">Coming soon</span>
+        <p class="size"><span>Not available yet</span></p>
+      </article>
+
+      <article class="dl soon reveal" id="ios">
+        <h3>{{icon:tablet}} iPhone and iPad <span class="badge badge-soon">Coming soon</span></h3>
+        <p class="req">With Picture-in-Picture, AirPlay and Live Rewind.</p>
+        <span class="btn btn-ghost btn-lg btn-block" aria-disabled="true" role="button">Coming soon</span>
+        <p class="size"><span>Not available yet</span></p>
+      </article>
+    </div>
+
+    <div class="note reveal" style="margin-top:28px">
+      {{icon:shield}}
+      <div>
+        <p><b>Which Mac do I have?</b> Open the Apple menu and choose About This Mac. If it says <b>Chip: Apple M1</b> (or M2, M3, M4…), download the Apple Silicon file. If it says <b>Processor: Intel</b>, download the Intel one.</p>
+        <p>The Intel file also runs on an Apple Silicon Mac, but through a translation layer that makes it far slower, so use the right one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="install">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Installing</span>
+      <h2>Three minutes, start to finish.</h2>
+      <p class="lead">Tenna's installers are not code-signed yet, so Windows and macOS will ask you to confirm once. That is expected.</p>
+    </div>
+
+    <div class="reveal">
+      <div class="tabs" role="tablist" aria-label="Operating system">
+        <button type="button" role="tab" id="tab-windows" data-os="windows" aria-controls="panel-windows" aria-selected="true">Windows</button>
+        <button type="button" role="tab" id="tab-mac" data-os="mac" aria-controls="panel-mac" aria-selected="false" tabindex="-1">macOS</button>
+      </div>
+
+      <div class="tabpanel" id="panel-windows" role="tabpanel" aria-labelledby="tab-windows">
+        <ol class="steps" style="list-style:none;padding:0">
+          <li class="step"><h3>Download and run</h3><p>Open <code>Tenna-IPTV-Player-Setup.exe</code> from your Downloads folder.</p></li>
+          <li class="step"><h3>Confirm the warning</h3><p>If "Windows protected your PC" appears, choose <b>More info</b>, then <b>Run anyway</b>. It shows because the installer is not signed yet.</p></li>
+          <li class="step"><h3>Install and open</h3><p>Pick a folder if you like, finish the installer, and open Tenna from the Start menu. Then add your playlist.</p></li>
+        </ol>
+      </div>
+
+      <div class="tabpanel" id="panel-mac" role="tabpanel" aria-labelledby="tab-mac" hidden>
+        <ol class="steps" style="list-style:none;padding:0">
+          <li class="step"><h3>Open the disk image</h3><p>Double-click the <code>.dmg</code> and drag <b>Tenna IPTV Player</b> into the Applications folder.</p></li>
+          <li class="step"><h3>Open it the first time</h3><p>In Applications, <b>right-click</b> the app and choose <b>Open</b>, then <b>Open</b> again. After that it opens normally.</p></li>
+          <li class="step"><h3>If it says "damaged"</h3><p>That is macOS blocking an unsigned download. In Terminal, run <code>xattr -cr "/Applications/Tenna IPTV Player.app"</code> and open it again.</p></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Requirements</span>
+      <h2>What you need.</h2>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Requirement</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><td>Windows</td><td>Windows 10 or 11, 64-bit</td></tr>
+          <tr><td>Mac</td><td>macOS 12 or later, Apple Silicon or Intel</td></tr>
+          <tr><td>Memory</td><td>4 GB, and 8 GB is better for 4K channels and multi-view</td></tr>
+          <tr><td>Disk space</td><td>About 500 MB for the app, plus room for your saved library</td></tr>
+          <tr><td>A playlist</td><td>An Xtream Codes account or an M3U link from a provider you have the right to use. Tenna provides none.</td></tr>
+          <tr><td>Internet</td><td>A connection fast enough for the quality you watch. The app includes a speed test.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="cards">
+      <article class="card reveal">
+        <div class="icon">{{icon:clock}}</div>
+        <h3>Android and iOS</h3>
+        <p>The phone and tablet apps are in the works and will appear here as soon as they are ready. Their source code is already on <a href="{{c:repos.app}}" rel="noopener">GitHub</a>.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">{{icon:list}}</div>
+        <h3>Release notes and older versions</h3>
+        <p>Every release, with what changed, is on the <a href="{{c:downloads.releases}}" rel="noopener">releases page</a>.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">{{icon:shield}}</div>
+        <h3>Questions or trouble?</h3>
+        <p>See the <a href="{{base}}/faq/">FAQ</a>, or <a href="{{c:supportUrl}}" rel="noopener">report a problem</a> and say what happened.</p>
+      </article>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+---
+slug: open-source
+title: Open-source notices
+description: The open-source software Tenna IPTV Player is built with, its licences, and the FFmpeg notice for the desktop apps.
+priority: 0.3
+---
+<section class="page-head">
+  <div class="container">
+    <span class="eyebrow">Legal</span>
+    <h1>Open-source notices</h1>
+    <p class="lead">Tenna stands on the work of many open-source projects. Thank you to everyone who builds them.</p>
+    <p class="meta">Last updated {{c:updated}}</p>
+  </div>
+</section>
+
+<div class="container legal-wrap">
+  <aside class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#ffmpeg">FFmpeg</a></li>
+      <li><a href="#components">Main components</a></li>
+      <li><a href="#source">Tenna's own source</a></li>
+    </ol>
+  </aside>
+
+  <article class="prose">
+    <h2 id="ffmpeg">FFmpeg (desktop apps)</h2>
+    <p>The Windows and Mac apps include unmodified, ready-built copies of <strong>FFmpeg 6.1.1</strong>, taken from the <a href="https://github.com/eugeneware/ffmpeg-static/releases/tag/b6.1.1" rel="noopener">ffmpeg-static project's release</a>. FFmpeg is licensed under the <strong>GNU General Public License, version 3 or later (GPL-3.0-or-later)</strong>.</p>
+    <p>Tenna runs FFmpeg as a separate program on your computer, only to convert audio the built-in player cannot decode and to read the subtitle tracks of films. It is not linked into Tenna. The licence text and the readme for the exact build are installed with the app, in the <code>ffmpeg</code> folder inside the app's resources.</p>
+    <p>You can get FFmpeg's source code from <a href="https://ffmpeg.org/download.html" rel="noopener">ffmpeg.org</a>. If you would like the source that matches the build in a Tenna download, <a href="{{c:supportUrl}}" rel="noopener">ask us on GitHub</a> and we will point you to it.</p>
+
+    <h2 id="components">Main components</h2>
+    <p>This is not a complete list. Each project's own page has its full licence and its own dependencies.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Component</th><th>Used for</th><th>Licence</th></tr></thead>
+        <tbody>
+          <tr><td>React, React Native, React Native Web</td><td>The app's interface, on phones, tablets and the web</td><td>MIT</td></tr>
+          <tr><td>Expo and Expo Router</td><td>App framework, navigation and device features</td><td>MIT</td></tr>
+          <tr><td>Electron (with Chromium)</td><td>The Windows and Mac apps' window and engine</td><td>MIT; Chromium and its parts under their own licences (BSD-style and others)</td></tr>
+          <tr><td>hls.js</td><td>Playing HLS streams on the desktop</td><td>Apache-2.0</td></tr>
+          <tr><td>mpegts.js</td><td>Playing MPEG-TS streams on the desktop</td><td>Apache-2.0</td></tr>
+          <tr><td>FFmpeg</td><td>Audio conversion and subtitle reading, desktop apps</td><td>GPL-3.0-or-later (see above)</td></tr>
+          <tr><td>VLC / VLCKit</td><td>A fallback player for formats the built-in one cannot open, phone and tablet apps</td><td>LGPL-2.1-or-later</td></tr>
+          <tr><td>Zustand</td><td>App state</td><td>MIT</td></tr>
+          <tr><td>FlashList</td><td>Long, fast lists</td><td>MIT</td></tr>
+          <tr><td>React Native Reanimated and Gesture Handler</td><td>Animation and touch gestures</td><td>MIT</td></tr>
+          <tr><td>NativeWind and Tailwind CSS</td><td>Styling</td><td>MIT</td></tr>
+          <tr><td>electron-builder</td><td>Building the installers</td><td>MIT</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="source">Tenna's own source</h2>
+    <p>The source code for the apps is on GitHub: the <a href="{{c:repos.app}}" rel="noopener">app</a>, the <a href="{{c:repos.desktop}}" rel="noopener">desktop packaging</a> and <a href="{{c:repos.site}}" rel="noopener">this website</a>. Please read the licence in each repository for the terms that apply to that code.</p>
+  </article>
+</div>

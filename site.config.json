@@ -1,0 +1,23 @@
+{
+  "name": "Tenna IPTV Player",
+  "shortName": "Tenna",
+  "tagline": "Your playlists, beautifully played",
+  "description": "Tenna is a fast, beautiful IPTV player for Windows and Mac, with Android and iOS coming soon. Bring your own Xtream Codes account or M3U playlist: live TV, movies, series, a TV guide, multi-view and live sports scores.",
+  "siteUrl": "https://najiite.github.io/tenna-player-web",
+  "basePath": "",
+  "version": "1.0.0",
+  "updated": "20 October 2026",
+  "repos": {
+    "desktop": "https://github.com/najiite/tenna-desktop",
+    "app": "https://github.com/najiite/tenna-iptv-player",
+    "site": "https://github.com/najiite/tenna-player-web"
+  },
+  "downloads": {
+    "windows": "https://github.com/najiite/tenna-desktop/releases/latest/download/Tenna-IPTV-Player-Setup.exe",
+    "macArm": "https://github.com/najiite/tenna-desktop/releases/latest/download/Tenna-IPTV-Player-mac-arm64.dmg",
+    "macIntel": "https://github.com/najiite/tenna-desktop/releases/latest/download/Tenna-IPTV-Player-mac-x64.dmg",
+    "releases": "https://github.com/najiite/tenna-desktop/releases"
+  },
+  "supportUrl": "https://github.com/najiite/tenna-desktop/issues",
+  "contactEmail": ""
+}
