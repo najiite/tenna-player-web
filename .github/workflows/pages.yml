@@ -24,8 +24,8 @@ jobs:
           node-version: 22
       - name: Build
         env:
-          BASE_PATH: /tenna-player-web
-          SITE_URL: https://najiite.github.io/tenna-player-web
+          BASE_PATH: ""
+          SITE_URL: https://tennaplayer.com
         run: |
           node build.mjs
           node scripts/check-site.mjs

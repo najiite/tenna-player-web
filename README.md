@@ -23,4 +23,4 @@ Pages live in `src/pages/*.html` (front matter plus HTML) and are wrapped by `sr
 
 ## Deploy
 
-`.github/workflows/pages.yml` builds with `BASE_PATH=/tenna-player-web` and deploys `dist` to GitHub Pages. Enable Pages (source: GitHub Actions) in the repository settings.
+`.github/workflows/pages.yml` builds for https://tennaplayer.com (no base path; the `CNAME` file is in `public/`) and deploys `dist` to GitHub Pages. Enable Pages (source: GitHub Actions) in the repository settings.
