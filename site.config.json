@@ -6,10 +6,9 @@
   "siteUrl": "https://tennaplayer.com",
   "basePath": "",
   "version": "1.0.1",
-  "updated": "20 October 2026",
+  "updated": "22 October 2026",
   "repos": {
     "desktop": "https://github.com/najiite/tenna-desktop",
-    "app": "https://github.com/najiite/tenna-iptv-player",
     "site": "https://github.com/najiite/tenna-player-web"
   },
   "downloads": {
@@ -19,5 +18,5 @@
     "releases": "https://github.com/najiite/tenna-desktop/releases"
   },
   "supportUrl": "https://github.com/najiite/tenna-desktop/issues",
-  "contactEmail": ""
+  "contactEmail": "support@tennaplayer.com"
 }

@@ -38,7 +38,7 @@ priority: 0.5
         <li>There are <strong>no accounts</strong>. Tenna does not know who you are.</li>
         <li>There are <strong>no ads, analytics or crash-report services</strong> in the app.</li>
         <li>Your playlist logins and your library are stored <strong>only on your device</strong>.</li>
-        <li>The app talks to <strong>your own provider</strong>, to a <strong>public sports scoreboard</strong> for scores, and to a <strong>speed-test server</strong> only when you run the speed test.</li>
+        <li>The app talks to <strong>your own provider</strong> (and to a guide address, if you add one), to a <strong>public sports scoreboard</strong> for scores, and to a <strong>speed-test server</strong> only when you run the speed test.</li>
       </ul>
     </div>
 
@@ -50,6 +50,7 @@ priority: 0.5
     <ul>
       <li><strong>Your playlists:</strong> the server address, username and password of an Xtream Codes account, or the address of an M3U playlist, and the names you gave them.</li>
       <li><strong>A saved copy of your library</strong> (the lists of channels, movies and series your provider sent), so the app opens quickly.</li>
+      <li><strong>A saved copy of your TV guide:</strong> the programmes of the next day or so for your channels, read from your provider's guide file or from a guide address you added, and the address itself.</li>
       <li><strong>Your activity in the app:</strong> favourites, favourite categories, watch history and where you stopped, profiles (including a Kids profile and its PIN), hidden and merged categories, and what Tenna learned about where series intros end.</li>
       <li><strong>Your settings:</strong> player choices, library-refresh schedule, guide time-shift, sports leagues and followed teams, notification choices, and on a computer the size and position of the window.</li>
       <li><strong>Reminders and schedules</strong> you create, and on phones and tablets the files you download or record.</li>
@@ -63,6 +64,7 @@ priority: 0.5
         <thead><tr><th>Who</th><th>Why</th><th>What they see</th></tr></thead>
         <tbody>
           <tr><td><strong>Your playlist provider</strong> (the server you add)</td><td>To sign in, load your channel lists and guide, and play streams</td><td>Your login for that account, the requests the app makes, and your IP address. Their privacy policy applies. We do not run or control them.</td></tr>
+          <tr><td><strong>Your TV guide source</strong> (your provider's guide file, or an address you add in Manage EPG)</td><td>To download the TV guide, a file that can be tens of megabytes</td><td>An ordinary web request and your IP address. For an Xtream account the request carries the same login as the rest of that account.</td></tr>
           <tr><td><strong>Picture servers</strong> named in your playlist (usually your provider or an image host it uses)</td><td>To show posters, logos and artwork</td><td>Ordinary web requests, including your IP address</td></tr>
           <tr><td><strong>ESPN's public scoreboard</strong> (site.api.espn.com)</td><td>Live scores, fixtures and team logos for the sports features</td><td>Which league and day are asked for, and your IP address. No login or personal details.</td></tr>
           <tr><td><strong>Cloudflare's speed test</strong> (speed.cloudflare.com)</td><td>Only when you press Start test in Settings</td><td>A download of test data (about 45 MB) and your IP address</td></tr>
@@ -92,11 +94,11 @@ priority: 0.5
 
     <h2 id="choices">8. Your choices and rights</h2>
     <ul>
-      <li><strong>Remove a playlist</strong> in Settings, Playlists, then choose the playlist and Delete. This removes its saved login and library from the app.</li>
-      <li><strong>Clear saved libraries, recordings and downloads</strong> in Settings, Storage.</li>
+      <li><strong>Remove a playlist</strong> in Settings, Playlists, then choose the playlist and Delete. This removes its saved login, library and TV guide from the app.</li>
+      <li><strong>Clear saved libraries (and their TV guides), recordings and downloads</strong> in Settings, Storage.</li>
       <li><strong>Remove everything</strong> by uninstalling the app. On a computer you can also delete its data folder: <code>%APPDATA%\Tenna IPTV Player</code> on Windows, or <code>~/Library/Application Support/Tenna IPTV Player</code> on a Mac.</li>
     </ul>
-    <p>Laws such as the GDPR and CCPA give you rights to see, correct and delete personal data a company holds about you. We hold no personal data about you, so there is nothing for us to give, fix or erase. If you contact us, for example by opening an issue on GitHub (which is public), we use what you write only to answer you.</p>
+    <p>Laws such as the GDPR and CCPA give you rights to see, correct and delete personal data a company holds about you. We hold no personal data about you, so there is nothing for us to give, fix or erase. If you contact us, for example by email or by opening an issue on GitHub (which is public), we use what you write only to answer you.</p>
 
     <h2 id="security">9. Security</h2>
     <p>Your data lives on your device, so its security depends on your device. Do not post playlist logins in public places, including problem reports.</p>
@@ -105,6 +107,6 @@ priority: 0.5
     <p>If we change how Tenna handles data, we will update this page and its date, and say so in the release notes. Using Tenna after a change means you accept the updated policy.</p>
 
     <h2 id="contact">11. Contact</h2>
-    <p>Questions about privacy? <a href="{{c:supportUrl}}" rel="noopener">Open an issue on GitHub</a> (do not include any login details).</p>
+    <p>Questions about privacy? Email <a href="mailto:{{c:contactEmail}}">{{c:contactEmail}}</a>, or <a href="{{c:supportUrl}}" rel="noopener">open an issue on GitHub</a>. Do not include any login details.</p>
   </article>
 </div>
