@@ -1,14 +1,14 @@
 ---
 slug: download
 title: Download
-description: Download Tenna IPTV Player for Windows and Mac. Android and iOS are coming soon. Free, with no sign-up.
+description: Download Tenna IPTV Player for Windows, Mac and Android TV. Android phones and iOS are coming soon. Free, with no sign-up.
 priority: 0.9
 ---
 <section class="page-head">
   <div class="container">
     <span class="eyebrow">Download</span>
     <h1>Get Tenna.</h1>
-    <p class="lead">Free for Windows and Mac. The Android and iOS apps are coming soon.</p>
+    <p class="lead">Free for Windows, Mac and Android TV. The Android phone and iOS apps are coming soon.</p>
     <p class="meta">Version {{c:version}} · installers are hosted on GitHub Releases</p>
   </div>
 </section>
@@ -34,9 +34,16 @@ priority: 0.9
         <p class="size"><span>.dmg disk image</span><span>about 145 to 155 MB</span></p>
       </article>
 
+      <article class="dl reveal" data-os="androidtv" id="androidtv">
+        <h3>{{icon:monitor}} Android TV and Fire TV <span class="badge badge-good">New</span></h3>
+        <p class="req">Android 8 or later, used with the TV remote. Installed from a file, for now.</p>
+        <a class="btn btn-primary btn-lg btn-block" href="{{c:downloads.androidTv}}" rel="noopener">{{icon:download}} Download the APK</a>
+        <p class="size"><span>Tenna-IPTV-Player-AndroidTV.apk</span><span>about 300 MB</span></p>
+      </article>
+
       <article class="dl soon reveal" id="android">
-        <h3>{{icon:phone}} Android <span class="badge badge-soon">Coming soon</span></h3>
-        <p class="req">Phones and tablets. We are finishing the Android app.</p>
+        <h3>{{icon:phone}} Android phones <span class="badge badge-soon">Coming soon</span></h3>
+        <p class="req">Phones and tablets. We are finishing the Android phone app.</p>
         <span class="btn btn-ghost btn-lg btn-block" aria-disabled="true" role="button">Coming soon</span>
         <p class="size"><span>Not available yet</span></p>
       </article>
@@ -71,6 +78,7 @@ priority: 0.9
       <div class="tabs" role="tablist" aria-label="Operating system">
         <button type="button" role="tab" id="tab-windows" data-os="windows" aria-controls="panel-windows" aria-selected="true">Windows</button>
         <button type="button" role="tab" id="tab-mac" data-os="mac" aria-controls="panel-mac" aria-selected="false" tabindex="-1">macOS</button>
+        <button type="button" role="tab" id="tab-androidtv" data-os="androidtv" aria-controls="panel-androidtv" aria-selected="false" tabindex="-1">Android TV</button>
       </div>
 
       <div class="tabpanel" id="panel-windows" role="tabpanel" aria-labelledby="tab-windows">
@@ -86,6 +94,14 @@ priority: 0.9
           <li class="step"><h3>Open the disk image</h3><p>Double-click the <code>.dmg</code> and drag <b>Tenna IPTV Player</b> into the Applications folder.</p></li>
           <li class="step"><h3>Open it the first time</h3><p>In Applications, <b>right-click</b> the app and choose <b>Open</b>, then <b>Open</b> again. After that it opens normally.</p></li>
           <li class="step"><h3>If it says "damaged"</h3><p>That is macOS blocking an unsigned download. In Terminal, run <code>xattr -cr "/Applications/Tenna IPTV Player.app"</code> and open it again.</p></li>
+        </ol>
+      </div>
+
+      <div class="tabpanel" id="panel-androidtv" role="tabpanel" aria-labelledby="tab-androidtv" hidden>
+        <ol class="steps" style="list-style:none;padding:0">
+          <li class="step"><h3>Get the file onto the TV</h3><p>On the TV, install the free <b>Downloader</b> app from the store, open it and type this page's address, or the APK link. On a computer you can instead use <code>adb install</code> over the network.</p></li>
+          <li class="step"><h3>Allow the install</h3><p>When asked, allow <b>Install unknown apps</b> for Downloader (Settings, Apps, Security &amp; restrictions on most TVs). The app is not in a store yet, so this is expected.</p></li>
+          <li class="step"><h3>Open Tenna and add your playlist</h3><p>Find <b>Tenna</b> with the other apps. Use the arrow keys and OK on the remote. On first start, add your Xtream Codes login or M3U link with the on-screen keyboard. Hold OK on a channel or poster to add it to your favourites.</p></li>
         </ol>
       </div>
     </div>
@@ -104,6 +120,7 @@ priority: 0.9
         <tbody>
           <tr><td>Windows</td><td>Windows 10 or 11, 64-bit</td></tr>
           <tr><td>Mac</td><td>macOS 12 or later, Apple Silicon or Intel</td></tr>
+          <tr><td>Android TV / Fire TV</td><td>Android 8 or later with a remote. Multi-view, downloads and recording are not in the TV version.</td></tr>
           <tr><td>Memory</td><td>4 GB, and 8 GB is better for 4K channels and multi-view</td></tr>
           <tr><td>Disk space</td><td>About 500 MB for the app, plus room for your saved library</td></tr>
           <tr><td>A playlist</td><td>An Xtream Codes account or an M3U link from a provider you have the right to use. Tenna provides none.</td></tr>
@@ -119,7 +136,7 @@ priority: 0.9
     <div class="cards">
       <article class="card reveal">
         <div class="icon">{{icon:clock}}</div>
-        <h3>Android and iOS</h3>
+        <h3>Android phones and iOS</h3>
         <p>The phone and tablet apps are in the works and will appear here as soon as they are ready.</p>
       </article>
       <article class="card reveal">
