@@ -5,7 +5,7 @@
   "description": "Tenna is a fast, beautiful IPTV player for Windows, Mac and Android TV, with Android phones and iOS coming soon. Bring your own Xtream Codes account or M3U playlist: live TV, movies, series, a TV guide, multi-view and live sports scores.",
   "siteUrl": "https://tennaplayer.com",
   "basePath": "",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "updated": "22 October 2026",
   "repos": {
     "desktop": "https://github.com/najiite/tenna-desktop",
