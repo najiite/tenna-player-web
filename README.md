@@ -1,6 +1,6 @@
 # Tenna IPTV Player: website
 
-The landing page and legal pages for [Tenna IPTV Player](https://github.com/najiite/tenna-desktop): home, features, download (Windows and macOS available, Android and iOS coming soon), FAQ, privacy policy, terms of use, disclaimer and open-source notices.
+The landing page and legal pages for [Tenna IPTV Player](https://github.com/najiite/tenna-desktop): home, features, download (iOS, Windows, macOS and Android TV available, Android phones coming soon), FAQ, privacy policy, terms of use, disclaimer and open-source notices.
 
 It is a small dependency-free static site generator (Node 18+).
 
@@ -19,7 +19,7 @@ Pages live in `src/pages/*.html` (front matter plus HTML) and are wrapped by `sr
 - Set `contactEmail` and the real `siteUrl` in `site.config.json`.
 - Update `version`, `updated` and the download URLs when you release.
 - Have the privacy policy, terms and disclaimer reviewed by a lawyer; they are written to match the app's behaviour but are not legal advice.
-- When the Android and iOS apps ship, replace the "Coming soon" cards on the home and download pages with real links.
+- When the Android phone app ships, replace the "Coming soon" cards on the home and download pages with a real link.
 
 ## Deploy
 
