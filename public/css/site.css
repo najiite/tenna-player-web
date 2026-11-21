@@ -244,8 +244,8 @@ kbd {
 .dl.soon { opacity: 0.92; background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.025) 0 12px, transparent 12px 24px), var(--surface); }
 .dl.soon h3 .i { color: #c4b5fd; }
 .dl .tag-rec { position: absolute; top: 18px; right: 18px; display: none; }
-html[data-os="windows"] .dl[data-os="windows"], html[data-os="mac"] .dl[data-os="mac"] { border-color: rgba(248, 222, 126, 0.55); box-shadow: 0 0 0 1px rgba(248, 222, 126, 0.2), 0 30px 80px -40px rgba(248, 222, 126, 0.4); }
-html[data-os="windows"] .dl[data-os="windows"] .tag-rec, html[data-os="mac"] .dl[data-os="mac"] .tag-rec { display: inline-flex; }
+html[data-os="windows"] .dl[data-os="windows"], html[data-os="mac"] .dl[data-os="mac"], html[data-os="android"] .dl[data-os="android"] { border-color: rgba(248, 222, 126, 0.55); box-shadow: 0 0 0 1px rgba(248, 222, 126, 0.2), 0 30px 80px -40px rgba(248, 222, 126, 0.4); }
+html[data-os="windows"] .dl[data-os="windows"] .tag-rec, html[data-os="mac"] .dl[data-os="mac"] .tag-rec, html[data-os="android"] .dl[data-os="android"] .tag-rec { display: inline-flex; }
 
 .tabs { display: flex; gap: 6px; padding: 5px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; width: fit-content; max-width: 100%; overflow-x: auto; margin-bottom: 22px; }
 .tabs button { font: inherit; font-weight: 700; font-size: 0.95rem; color: var(--muted); background: transparent; border: 0; padding: 10px 18px; border-radius: 999px; cursor: pointer; white-space: nowrap; }

@@ -2,7 +2,7 @@
   "name": "Tenna IPTV Player",
   "shortName": "Tenna",
   "tagline": "Your playlists, beautifully played",
-  "description": "Tenna is a fast, beautiful IPTV player for iPhone, iPad, Windows, Mac and Android TV, with Android phones coming soon. Bring your own Xtream Codes account or M3U playlist: live TV, movies, series, a TV guide, multi-view, live sports scores and, on iPhone and iPad, clips you can share.",
+  "description": "Tenna is a fast, beautiful IPTV player for iPhone, iPad, Android phones, Windows, Mac and Android TV. Bring your own Xtream Codes account or M3U playlist: live TV, movies, series, a TV guide, multi-view, live sports scores and, on iPhone and iPad, clips you can share.",
   "siteUrl": "https://tennaplayer.com",
   "basePath": "",
   "version": "1.2.0",
@@ -17,7 +17,8 @@
     "macIntel": "https://github.com/najiite/tenna-desktop/releases/latest/download/Tenna-IPTV-Player-mac-x64.dmg",
     "releases": "https://github.com/najiite/tenna-desktop/releases",
     "androidTv": "https://github.com/najiite/tenna-desktop/releases/download/android-tv-v1.2.0/Tenna-IPTV-Player-AndroidTV.apk",
-    "ios": "https://apps.apple.com/app/id6825675101"
+    "ios": "https://apps.apple.com/app/id6825675101",
+    "androidPhone": "https://github.com/najiite/tenna-desktop/releases/download/android-v1.2.0/Tenna-IPTV-Player-Android.apk"
   },
   "supportUrl": "https://github.com/najiite/tenna-desktop/issues",
   "contactEmail": "support@tennaplayer.com"

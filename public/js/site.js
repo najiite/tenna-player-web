@@ -18,7 +18,9 @@
   const ua = navigator.userAgent || '';
   const hint = navigator.userAgentData?.platform || navigator.platform || '';
   let os = 'other';
-  if (/android|iphone|ipad|ipod/i.test(ua) || (/Mac/i.test(hint) && navigator.maxTouchPoints > 1)) os = 'mobile';
+  // An Android phone or tablet gets its card; a TV or Fire TV stick (AFT…) doesn't count as a phone
+  if (/android/i.test(ua) && !/\b(tv|aft\w*|bravia)\b/i.test(ua)) os = 'android';
+  else if (/android|iphone|ipad|ipod/i.test(ua) || (/Mac/i.test(hint) && navigator.maxTouchPoints > 1)) os = 'mobile';
   else if (/win/i.test(hint) || /windows/i.test(ua)) os = 'windows';
   else if (/mac/i.test(hint) || /macintosh|mac os/i.test(ua)) os = 'mac';
   root.dataset.os = os;
