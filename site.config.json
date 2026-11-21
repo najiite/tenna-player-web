@@ -16,7 +16,7 @@
     "macArm": "https://github.com/najiite/tenna-desktop/releases/latest/download/Tenna-IPTV-Player-mac-arm64.dmg",
     "macIntel": "https://github.com/najiite/tenna-desktop/releases/latest/download/Tenna-IPTV-Player-mac-x64.dmg",
     "releases": "https://github.com/najiite/tenna-desktop/releases",
-    "androidTv": "https://github.com/najiite/tenna-desktop/releases/download/android-tv-v1.0.0/Tenna-IPTV-Player-AndroidTV.apk",
+    "androidTv": "https://github.com/najiite/tenna-desktop/releases/download/android-tv-v1.2.0/Tenna-IPTV-Player-AndroidTV.apk",
     "ios": "https://apps.apple.com/app/id6825675101"
   },
   "supportUrl": "https://github.com/najiite/tenna-desktop/issues",
